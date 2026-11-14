@@ -1,6 +1,7 @@
+$schema: https://azuremlschemas.azureedge.net/latest/MLTable.schema.json
 
 paths:
-  - file: ../bank-marketing.csv
+  - file: ./bank-marketing.csv
 
 transformations:
   - read_delimited:
