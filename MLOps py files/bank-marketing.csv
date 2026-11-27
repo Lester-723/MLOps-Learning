@@ -1,4 +1,4 @@
-,age,job,marital,default,balance,housing,loan,day_of_week,month,duration,campaign,pdays,previous,Subscribed
+index,age,job,marital,default,balance,housing,loan,day_of_week,month,duration,campaign,pdays,previous,Subscribed
 0,58,management,married,no,2143,yes,no,5,may,261,1,-1,0,no
 1,44,technician,single,no,29,yes,no,5,may,151,1,-1,0,no
 2,33,entrepreneur,married,no,2,yes,yes,5,may,76,1,-1,0,no

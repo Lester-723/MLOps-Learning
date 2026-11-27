@@ -1,6 +1,8 @@
 import pandas as pd 
 import argparse as args
 from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+
 
 parameter_parser = args.ArgumentParser(description= "Python Arguments for ML model preparation")
 
@@ -56,12 +58,6 @@ def return_train_test_split(para_args):
 
     X_features = ['job', 'default', 'housing', 'loan', 'month', 'age', 'balance', 'duration', 'campaign']
     Y_features = ['Subscribed']
-
-    for feature in X_features + Y_features:
-        if feature not in df.columns:
-            print("Feature does not exist")
-        else:
-            print("All Features exist")
 
     X_train , X_temp , Y_train , Y_temp = train_test_split(df[X_features], df[Y_features] ,test_size = para_args.test_size  ,random_state = para_args.random_state )
 
